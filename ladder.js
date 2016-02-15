@@ -1,5 +1,6 @@
 function ladder(height, angle) {
-  return 0;
+  var angleInRad = Math.PI/180 * angle
+  return Math.ceil(height/Math.sin(angleInRad))
 }
 
 module.exports = ladder;
